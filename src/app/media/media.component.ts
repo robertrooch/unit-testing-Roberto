@@ -26,7 +26,7 @@ export class MediaComponent {
     reader.readAsText(file);
   }
 
-  private computeAverage(numbers: number[]): number {
+  public computeAverage(numbers: number[]): number {
     const sum = numbers.reduce((acc, curr) => acc + curr, 0);
     return parseFloat((sum / numbers.length).toFixed(2));
   }
